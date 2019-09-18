@@ -43,7 +43,7 @@
 	</script>
 	<script type="text/javascript" src="js/mypassion.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-	integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+		integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 </head>
 
 <body>
@@ -1941,8 +1941,10 @@ Start Contact part
 						University, Amritanagar PO<br>Coimbatore - 641112, INDIA<br>
 
 
-						<i class="fa fa-envelope-o"></i> Email: <a class="mailto" href="mailto:scicon19@cb.amrita.edu" target="_top">scicon19@cb.amrita.edu</a><br>
-						<i class="fa fa-envelope-o"></i> Email: <a class="mailto" href="mailto:r_prasanna1@cb.amrita.edu" target="_top">r_prasanna1@cb.amrita.edu</a><br>
+						<i class="fa fa-envelope-o"></i> Email: <a class="mailto" href="mailto:scicon19@cb.amrita.edu"
+							target="_top">scicon19@cb.amrita.edu</a><br>
+						<i class="fa fa-envelope-o"></i> Email: <a class="mailto"
+							href="mailto:r_prasanna1@cb.amrita.edu" target="_top">r_prasanna1@cb.amrita.edu</a><br>
 
 
 
@@ -1953,20 +1955,34 @@ Start Contact part
 			<div class="col-md-4 contact-right">
 
 				<p> <strong>CONFERENCE ORGANISED BY</strong><br>
-					<a href="https://www.amrita.edu/school/engineering/coimbatore/sciences" target="_blank">Department of
+					<a href="https://www.amrita.edu/school/engineering/coimbatore/sciences" target="_blank">Department
+						of
 						Sciences<br>
-					Amrita University, Amritanagar PO<br>Coimbatore - 641112<br>Tamil Nadu, India<br></a>
+						Amrita University, Amritanagar PO<br>Coimbatore - 641112<br>Tamil Nadu, India<br></a>
 				</p>
 			</div>
 
 			<div class="col-md-4 map">
 
-				<div style="height:300px;width:400px;max-width:100%;list-style:none; transition: none;overflow:hidden;">
-					<div id="gmap_canvas" style="height:100%; width:100%;max-width:100%;"><iframe
-							style="height:100%;width:100%;border:0;" frameborder="0"
-							src="https://www.google.com/maps/embed/v1/place?q=Amrita+Vishwa+Vidyapeetham,+Coimbatore,+Tamil+Nadu,+India&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
-					</div>
-					<style #gmap_canvas .map-generator{max-width: 100%; max-height: 100%; background: none;></style>
+				<div class="mapouter">
+					<div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas"
+							src="https://maps.google.com/maps?q=Amrita%20Vishwa%20Vidyapeetham&t=&z=11&ie=UTF8&iwloc=&output=embed"
+							frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+					<style>
+						.mapouter {
+							position: relative;
+							text-align: right;
+							height: 300px;
+							width: 400px;
+						}
+
+						.gmap_canvas {
+							overflow: hidden;
+							background: none !important;
+							height: 300px;
+							width: 400px;
+						}
+					</style>
 				</div>
 			</div>
 
