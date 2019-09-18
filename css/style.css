@@ -106,6 +106,7 @@ h2{
 	font-size:14px;
 	font-family:'Raleway',Sans-Serif;
 	font-weight: 600;
+	background: #000 !important;
 
 }
 #nav .current a {
