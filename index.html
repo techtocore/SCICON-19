@@ -75,15 +75,15 @@
 			<div class="menu">
 				<!-- <a class="toggleMenu" href="#"><img src="images/menu.png" alt="" /> </a> -->
 				<ul class="nav" id="nav">
-					<li><a class="anchor" href="#abouts">About</a></li>
-					<li><a class="anchor" href="#tracks">Tracks</a></li>
-					<li><a class="anchor" href="#registration">Registration</a></li>
-					<li><a class="anchor" href="#advisoryboard">Advisory Board</a></li>
-					<li><a class="anchor" href="#speakers">Speakers</a></li>
+					<li><a href="#abouts">About</a></li>
+					<li><a href="#tracks">Tracks</a></li>
+					<li><a href="#registration">Registration</a></li>
+					<li><a href="#advisoryboard">Advisory Board</a></li>
+					<li><a href="#speakers">Speakers</a></li>
 					<!--<li><a href="#contact">Contact Us</a></li>-->
-					<li><a class="anchor" href="#accomodation">Accomodation </a> </li>
-					<li><a class="anchor" href="#sponsors">Sponsors</a> </li>
-					<li><a class="anchor" href="#schedule">Schedule</a> </li>
+					<li><a href="#accomodation">Accomodation </a> </li>
+					<li><a href="#sponsors">Sponsors</a> </li>
+					<li><a href="#schedule">Schedule</a> </li>
 					<!--<li><a href="download/Brochure_scicon.pdf" target="_blank">Handbook</a> </li>-->
 					<li><a href="download/How_to_reach_scicon.pdf" target="_blank">How to reach</a> </li>
 					<li><a href="https://payments.acrd.org.in/pay/event/cbe201920006" target="_blank">MAKE PAYMENT</a>
@@ -1811,7 +1811,7 @@
 	<!-- end of sponsers part -->
 	<hr>
 
-	<div id="sponsors"><br>
+	<div id="schedule"><br>
 		<div class="container">
 			<div class="tittle">
 				<h2>Schedule</h2>
@@ -1999,7 +1999,7 @@ Start Contact part
 				<p> SCICON 2019 | Amrita Vishwa Vidyapeetham</p>
 			</div>
 			<div align="right">
-				<p> <a href="https://akashravi.github.io"> Designed by Akash Ravi </a> </p>
+				<p> <a href="https://akashravi.github.io" target="_blank"> Designed by Akash Ravi </a> </p>
 			</div>
 			<br>
 		</div>
@@ -2082,6 +2082,16 @@ Start silder part
 
 		(function ($) {
 			$('a[href*=#]:not([href=#])').click(function () {
+				try {
+					var classList = $(this).attr('class').split(' ');
+					// console.log(classList);
+					if (classList.includes('carousel-control')) {
+						return;
+					}
+				}
+				catch (err) {
+					// console.log(err);
+				}
 				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
 					|| location.hostname == this.hostname) {
 
