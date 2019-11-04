@@ -737,9 +737,8 @@ h2{
 .sponsors-item {
 	width: 60%;
 	height: 60%;
-
 	position: relative;
-	cursor: default;
+	cursor: pointer;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
@@ -761,6 +760,12 @@ h2{
 .sponsors-img-3 {
 	border-radius: 0 !important;
 	background-image: url(../images/sponsors/ETS.jpg); background-repeat: no-repeat;
+}
+.sponsors-img-4 {
+	border-radius: 0 !important;
+	background-image: url(../images/sponsors/avra.gif); background-repeat: no-repeat;
+	height: 60px;
+
 }
 /* Effect 9 */
 .hi-icon-effect-9 .hi-icon {
